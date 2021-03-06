@@ -1,3 +1,6 @@
+#! python3
+# hangman_art - All the ASCII art used in hangman.py
+
 stages = ['''
   +---+
   |   |
