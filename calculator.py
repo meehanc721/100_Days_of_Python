@@ -1,5 +1,5 @@
 #! python3
-# Calculator.py - self explanatory
+# calculator.py - self explanatory
 from art import logo
 
 
