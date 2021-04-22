@@ -7,7 +7,7 @@ MY_LAT = 40.712776
 MY_LONG = -74.005974
 
 MY_EMAIL = "codechad721@gmail.com"
-PASSWORD = ",.Cm1993"
+PASSWORD = "suckalemon"
 
 def near_iss():
     response = requests.get(url="http://api.open-notify.org/iss-now.json")
