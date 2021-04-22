@@ -11,7 +11,7 @@ if today == 6:
         quote = random.choice(quotes_list)
 
     my_email = "codechad721@gmail.com"
-    password = ",.Cm1993"
+    password = "suckalemon"
 
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
