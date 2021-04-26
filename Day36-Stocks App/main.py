@@ -5,10 +5,10 @@ from twilio.rest import Client
 STOCK_NAME = "GME"
 COMPANY_NAME = "GameStop"
 
-STOCK_API_KEY = "UNLI5AYGGJV6LYB7"
+STOCK_API_KEY = "suckalemon"
 STOCK_ENDPOINT = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=GME&apikey={STOCK_API_KEY}"
 
-NEWS_API_KEY = "f2c23a0b6c484b349e3ee09d64ffcb86"
+NEWS_API_KEY = "suckalemon"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 
 tw_account_sid = "AC0cfc4da53b41e7a8564ac48010b7ef67"
@@ -69,17 +69,4 @@ if abs(diff_percent) > 10:
         )
         print(message.status)
 
-
-
-
-#Optional TODO: Format the message like this: 
-"""
-TSLA: 🔺2%
-Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?. 
-Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to file by the SEC The 13F filings show the funds' and investors' portfolio positions as of March 31st, near the height of the coronavirus market crash.
-or
-"TSLA: 🔻5%
-Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?. 
-Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to file by the SEC The 13F filings show the funds' and investors' portfolio positions as of March 31st, near the height of the coronavirus market crash.
-"""
 
