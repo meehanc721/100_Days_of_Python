@@ -12,7 +12,7 @@ NEWS_API_KEY = "suckalemon"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 
 tw_account_sid = "AC0cfc4da53b41e7a8564ac48010b7ef67"
-tw_auth_token = "f5de37bd41808797ee07fa581c81495d"
+tw_auth_token = "suckalemon"
 
 stock_params = {
     "function": "TIME_SERIES_DAILY",
