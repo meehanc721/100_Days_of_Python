@@ -1,9 +1,9 @@
 from twilio.rest import Client
 
-TWILIO_SID = "AC0cfc4da53b41e7a8564ac48010b7ef67"
-TWILIO_AUTH_TOKEN = "64dc82096cc216ace3a543a61d75bdff"
-TWILIO_VIRTUAL_NUMBER = "+16193822382"
-TWILIO_VERIFIED_NUMBER = "+17029349088"
+TWILIO_SID = "xxxxxxxxxxxxxxxx"
+TWILIO_AUTH_TOKEN = "suckalemon"
+TWILIO_VIRTUAL_NUMBER = "+1xxxxxxxxx"
+TWILIO_VERIFIED_NUMBER = "+1xxxxxxxx"
 
 
 class NotificationManager:
@@ -19,29 +19,3 @@ class NotificationManager:
         )
         # Prints if successfully sent.
         print(message.sid)
-
-
-
-
-
-
-
-
-
-
-
-
-
-    # def text_notification(self):
-    #
-    #     tw_account_sid = "AC0cfc4da53b41e7a8564ac48010b7ef67"
-    #     tw_auth_token = "64dc82096cc216ace3a543a61d75bdff"
-    #
-    #     client = Client(tw_account_sid, tw_auth_token)
-    #     message = client.messages \
-    #         .create(
-    #         body=formatted_articles_list[i],
-    #         from_='+116193822382',
-    #         to='+17029349088'
-    #     )
-    #     print(message.status)
