@@ -4,10 +4,10 @@ from pprint import pprint
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-SPOTIPY_CLIENT_ID = "f5c8f68674074e3682e6f2a061294e94"
-SPOTIPY_CLIENT_SECRET = "198668d6450f45be92facfbffc7addca"
+SPOTIPY_CLIENT_ID = "###########################"
+SPOTIPY_CLIENT_SECRET = "#######################"
 SPOTIPY_REDIRECT_URI = "http://example.com"
-SPOTIFY_USERNAME = "1171954741"
+SPOTIFY_USERNAME = "###################"
 
 #Part 1
 date = input("What year do you want to travel to? Type the date in this format: YYYY-MM-DD:\n")
