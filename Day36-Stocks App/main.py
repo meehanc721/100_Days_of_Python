@@ -11,7 +11,7 @@ STOCK_ENDPOINT = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&
 NEWS_API_KEY = "suckalemon"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 
-tw_account_sid = "AC0cfc4da53b41e7a8564ac48010b7ef67"
+tw_account_sid = "#####################"
 tw_auth_token = "suckalemon"
 
 stock_params = {
@@ -64,8 +64,8 @@ if abs(diff_percent) > 10:
         message = client.messages \
             .create(
             body=formatted_articles_list[i],
-            from_='+116193822382',
-            to='+17029349088'
+            from_='#################',
+            to='##############'
         )
         print(message.status)
 
