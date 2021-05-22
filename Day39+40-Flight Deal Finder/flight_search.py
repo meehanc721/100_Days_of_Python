@@ -1,5 +1,4 @@
 import requests
-from pprint import pprint
 from flight_data import FlightData
 
 TEQUILA_ENDPOINT = "https://tequila-api.kiwi.com"
@@ -7,15 +6,15 @@ TEQUILA_API_KEY = "#############################"
 
 
 class FlightSearch:
-    #This class is responsible for talking to the Flight Search API.
+
     def get_destination_code(self, city_name):
-        city_params = {"term": city_name, "location_types": "city"}
+        location_endpoint = f"{TEQUILA_ENDPOINT}/locations/query"
         headers = {"apikey": TEQUILA_API_KEY}
-        # Get our IATA code
-        city_response = requests.get(url=f"{TEQUILA_ENDPOINT}/locations/query", params=city_params, headers=headers)
-        city_response.raise_for_status()
-        iata_code = city_response.json()["locations"][0]["code"]
-        return iata_code
+        query = {"term": city_name, "location_types": "city"}
+        response = requests.get(url=location_endpoint, headers=headers, params=query)
+        results = response.json()["locations"]
+        code = results[0]["code"]
+        return code
 
     def check_flights(self, origin_city_code, destination_city_code, from_time, to_time):
         headers = {"apikey": TEQUILA_API_KEY}
@@ -29,7 +28,7 @@ class FlightSearch:
             "flight_type": "round",
             "one_for_city": 1,
             "max_stopovers": 0,
-            "curr": "USD"
+            "curr": "GBP"
         }
 
         response = requests.get(
@@ -53,5 +52,5 @@ class FlightSearch:
             out_date=data["route"][0]["local_departure"].split("T")[0],
             return_date=data["route"][1]["local_departure"].split("T")[0]
         )
-        print(f"{flight_data.destination_city}: ${flight_data.price}")
+        print(f"{flight_data.destination_city}: £{flight_data.price}")
         return flight_data

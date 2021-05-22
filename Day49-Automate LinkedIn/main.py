@@ -12,7 +12,7 @@ ACCOUNT_PASSWORD = "my_password"
 chrome_driver_path = "C:\Development\chromedriver.exe"
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
 
-# Hide automation from Chromium, open in maximized windowp
+# Hide automation from Chromium, open in maximized window
 option = webdriver.ChromeOptions()
 option.add_argument('--disable-blink-features=AutomationControlled')
 option.add_argument("--start-maximized")
