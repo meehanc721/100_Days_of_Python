@@ -6,7 +6,7 @@ from wtforms import StringField, SubmitField, FloatField
 from wtforms.validators import DataRequired
 import requests
 
-API_KEY = "3f6467326fd66c1b6d2a8699ad1925ff"
+API_KEY = "suckalemon"
 API_SEARCH_ENDPOINT = "https://api.themoviedb.org/3/search/movie/"
 MOVIE_INFO_ENDPOINT = "https://api.themoviedb.org/3/movie/"
 IMAGE_API_URL = "https://image.tmdb.org/t/p/w500/"
