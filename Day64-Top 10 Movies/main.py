@@ -5,6 +5,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, FloatField
 from wtforms.validators import DataRequired
 import requests
+from datetime import date
 
 API_KEY = "suckalemon"
 API_SEARCH_ENDPOINT = "https://api.themoviedb.org/3/search/movie/"
